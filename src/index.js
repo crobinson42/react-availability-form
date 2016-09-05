@@ -37,7 +37,7 @@ export default class Component extends React.Component {
     let style = status === true ? styles.available : styles.unavailable
 
     Object.assign(style, {
-      height: '50px', width: '100%'
+      height: '50px', width: '100%', border: '1px solid rgb(122, 118, 53)'
     })
 
     return (
@@ -95,7 +95,7 @@ export default class Component extends React.Component {
 
     return (
       <div>
-        <table style={{width: '100%', border: '1px solid grey', textAlign: 'center'}}>
+        <table style={{width: '100%', textAlign: 'center'}}>
           <tbody>
             <tr>
               <th style={{width: '100px'}}>

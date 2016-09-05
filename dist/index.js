@@ -68,7 +68,7 @@ var Component = function (_React$Component) {
       var style = status === true ? styles.available : styles.unavailable;
 
       Object.assign(style, {
-        height: '50px', width: '100%'
+        height: '50px', width: '100%', border: '1px solid rgb(122, 118, 53)'
       });
 
       return _react2.default.createElement(
@@ -138,7 +138,7 @@ var Component = function (_React$Component) {
         null,
         _react2.default.createElement(
           'table',
-          { style: { width: '100%', border: '1px solid grey', textAlign: 'center' } },
+          { style: { width: '100%', textAlign: 'center' } },
           _react2.default.createElement(
             'tbody',
             null,
