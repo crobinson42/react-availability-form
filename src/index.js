@@ -93,6 +93,12 @@ export default class Component extends React.Component {
       )
     }
 
+    const thStyle = {
+      textAlign: 'center',
+      minWidth: '50px',
+      maxWidth: '150px'
+    }
+
     return (
       <div>
         <table style={{width: '100%', textAlign: 'center'}}>
@@ -101,25 +107,25 @@ export default class Component extends React.Component {
               <th style={{width: '100px'}}>
                 {/* */}
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Mon
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Tue
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Wed
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Thu
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Fri
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Sat
               </th>
-              <th style={{textAlign: 'center'}}>
+              <th style={thStyle}>
                 Sun
               </th>
             </tr>

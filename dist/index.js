@@ -133,6 +133,12 @@ var Component = function (_React$Component) {
         );
       };
 
+      var thStyle = {
+        textAlign: 'center',
+        minWidth: '50px',
+        maxWidth: '150px'
+      };
+
       return _react2.default.createElement(
         'div',
         null,
@@ -148,37 +154,37 @@ var Component = function (_React$Component) {
               _react2.default.createElement('th', { style: { width: '100px' } }),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Mon'
               ),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Tue'
               ),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Wed'
               ),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Thu'
               ),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Fri'
               ),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Sat'
               ),
               _react2.default.createElement(
                 'th',
-                { style: { textAlign: 'center' } },
+                { style: thStyle },
                 'Sun'
               )
             ),
