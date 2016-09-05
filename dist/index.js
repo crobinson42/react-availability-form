@@ -66,6 +66,7 @@ var Component = function (_React$Component) {
       };
 
       var style = status === true ? styles.available : styles.unavailable;
+
       Object.assign(style, {
         height: '50px', width: '100%'
       });
@@ -99,10 +100,9 @@ var Component = function (_React$Component) {
       var el = e.currentTarget.getAttribute('data-id');
       var shift = el.substr(0, el.indexOf('|'));
       var day = el.substr(el.indexOf('|') + 1, el.length);
-
       var availability = {};
       Object.assign(availability, this.state.availability);
-      availability[shift][day] = availability[shift][day] || false;
+      availability[shift][day] = !availability[shift][day];
 
       this.setState({
         availability: availability

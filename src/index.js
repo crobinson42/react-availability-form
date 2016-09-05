@@ -35,6 +35,7 @@ export default class Component extends React.Component {
     }
 
     let style = status === true ? styles.available : styles.unavailable
+
     Object.assign(style, {
       height: '50px', width: '100%'
     })
@@ -68,10 +69,9 @@ export default class Component extends React.Component {
     const el = e.currentTarget.getAttribute('data-id')
     const shift = el.substr(0, el.indexOf('|'))
     const day = el.substr(el.indexOf('|') + 1, el.length)
-
     let availability = {}
     Object.assign(availability, this.state.availability)
-    availability[shift][day] = availability[shift][day] || false
+    availability[shift][day] = !availability[shift][day]
 
     this.setState({
       availability: availability
