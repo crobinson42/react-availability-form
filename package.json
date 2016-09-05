@@ -1,6 +1,6 @@
 {
   "name": "react-availability-form",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React.s Component - A UI component to articulate a weekly schedule availability",
   "main": "dist/index.js",
   "scripts": {
