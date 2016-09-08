@@ -97,6 +97,7 @@ var Component = function (_React$Component) {
   }, {
     key: 'handleBlockClick',
     value: function handleBlockClick(e) {
+      var self = this;
       var el = e.currentTarget.getAttribute('data-id');
       var shift = el.substr(0, el.indexOf('|'));
       var day = el.substr(el.indexOf('|') + 1, el.length);
@@ -106,6 +107,10 @@ var Component = function (_React$Component) {
 
       this.setState({
         availability: availability
+      }, function () {
+        if (self.props.onChange) {
+          self.props.onChange(availability);
+        }
       });
     }
   }, {

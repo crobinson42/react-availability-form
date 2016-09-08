@@ -66,6 +66,7 @@ export default class Component extends React.Component {
   }
 
   handleBlockClick (e) {
+    const self = this
     const el = e.currentTarget.getAttribute('data-id')
     const shift = el.substr(0, el.indexOf('|'))
     const day = el.substr(el.indexOf('|') + 1, el.length)
@@ -75,6 +76,10 @@ export default class Component extends React.Component {
 
     this.setState({
       availability: availability
+    }, () => {
+      if (self.props.onChange) {
+        self.props.onChange(availability)
+      }
     })
   }
 
